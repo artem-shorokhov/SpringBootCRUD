@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Version: 1.0
-Built-By: i
-Implementation-Vendor-Id: org.enigma
-Created-By: IntelliJ IDEA
-Build-Jdk: 1.8.0_101
-Main-Class: ${start-class}
-
