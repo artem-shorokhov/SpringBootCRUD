@@ -2,11 +2,18 @@ package org.enigma.crud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class CrudApplication {
+public class CrudApplication extends SpringBootServletInitializer {
 
-    public static void main(String[] args) {
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(CrudApplication.class);
+    }
+
+    public static void main(String[] args) throws Exception {
         SpringApplication.run(CrudApplication.class, args);
     }
 }
